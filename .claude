@@ -1,0 +1,75 @@
+# Vidocu Clip - Claude AI Configuration
+
+## Project Context
+
+This is a Laravel-based video clip management application.
+
+### Tech Stack
+- Laravel 12.38.1
+- PHP 8.3+
+- MySQL 8.0
+- Nginx
+- Vite + Tailwind CSS
+- Docker & Docker Compose
+
+### Project Structure
+- `/app` - Application core (Models, Controllers, Services)
+- `/resources` - Frontend assets (Views, CSS, JS)
+- `/routes` - Application routes
+- `/database` - Migrations, Seeders, Factories
+- `/config` - Configuration files
+- `/public` - Public assets
+- `/storage` - File storage and logs
+- `/tests` - Test suites
+
+### Port Configuration
+- Web: 8095
+- MySQL: 3310
+- phpMyAdmin: 8096
+- Vite HMR: 5174
+
+### Database
+- Name: vidocu_clip
+- User: vidocu_clip
+- Password: vidocu_clip
+
+### Development Guidelines
+1. Follow Laravel best practices and conventions
+2. Use PSR-12 coding standards
+3. Write tests for new features
+4. Use Laravel Pint for code formatting
+5. Keep controllers thin, use services for business logic
+6. Use Form Requests for validation
+7. Use Eloquent relationships properly
+8. Write meaningful commit messages
+
+### Key Features (To be implemented)
+- Video clip upload and management
+- Video processing and conversion
+- User authentication and authorization
+- Video categorization and tagging
+- Search and filter functionality
+- Video player integration
+
+### Useful Commands
+```bash
+# Docker
+docker-compose up -d
+docker-compose exec app php artisan <command>
+
+# Local
+php artisan serve --port=8095
+npm run dev
+
+# Code Quality
+./vendor/bin/pint
+php artisan test
+```
+
+### Notes for AI Assistant
+- Always check existing code patterns before implementing new features
+- Maintain consistency with existing codebase structure
+- Consider performance implications for video processing
+- Follow RESTful API conventions
+- Use Laravel's built-in features when possible (Queue, Events, Storage, etc.)
+- Write clear documentation for complex logic
